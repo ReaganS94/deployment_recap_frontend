@@ -58,7 +58,7 @@ function App() {
       return;
     }
 
-    await fetch("http://localhost:8080/facts", {
+    await fetch(live_url, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ text }),
